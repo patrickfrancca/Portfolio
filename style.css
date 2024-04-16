@@ -14,7 +14,38 @@ a {
     color: #363636;
     letter-spacing: 4px;
     text-transform: uppercase;
-    display: block;
+    display: flex;
     margin-left: 70px;
     margin-top: 39px;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    font-family: 'roboto', sans-serif;
+    height: 8vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    Align-items: center;
+    justify-content: center;
+    flex-grow:1;
+    margin-top: 38px;
+    margin-right: 185px;
+}
+
+.nav-list li {
+    letter-spacing: 0px;
+    margin: 0 20px;
+    color: #000000;
+}
+
+.nav-list li a:hover {
+    color: #000000
 }
