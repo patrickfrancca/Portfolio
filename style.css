@@ -4,14 +4,14 @@
 }
 
 a {
-    color: #d1d1d1;
+    color: #171a20;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.4s;
 }
 
 .logo {
     font-size: 22px;
-    color: #000000;
+    color: #171a20;
     letter-spacing: 4px;
     text-transform: uppercase;
     display: flex;
@@ -26,18 +26,18 @@ a:hover {
 nav {
     display: flex;
     align-items: center;
-    font-family: 'roboto', sans-serif;
     height: 8vh;
+    font-family: 'roboto', sans-serif;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
     Align-items: center;
-    justify-content: center;
+    justify-content: end;
     flex-grow: 1;
     margin-top: 38px;
-    margin-right: -573px;
+    margin-right: 70px;
 }
 
 .nav-list li {
@@ -47,5 +47,5 @@ nav {
 }
 
 .nav-list li a:hover {
-    color: #000000
+    color: #a7a7a7
 }
