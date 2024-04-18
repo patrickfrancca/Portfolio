@@ -1,22 +1,33 @@
+@font-face {
+    font-family: 'neuemachina';
+    src: url('Fonts/PPNeueMachina-InktrapRegular.otf');
+}
+
+@font-face {
+    font-family: 'neuemachinalight';
+    src: url('Fonts/PPNeueMachina-PlainLightItalic.otf');
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
 a {
-    color: #171a20;
+    color: #ffffff;
     text-decoration: none;
     transition: 0.4s;
 }
 
 .logo {
     font-size: 22px;
-    color: #171a20;
+    color: #ffffff;
     letter-spacing: 4px;
     text-transform: uppercase;
     display: flex;
-    margin-left: 90px;
+    margin-left: 903px;
     margin-top: 39px;
+    font-family: 'neuemachina';
 }
 
 a:hover {
@@ -40,12 +51,57 @@ nav {
     margin-right: 70px;
 }
 
+@keyframes flutuar {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
 .nav-list li {
     letter-spacing: 0px;
     margin: 0 20px;
-    color: #000000;
+    color: #ffffff;
 }
 
 .nav-list li a:hover {
     color: #a7a7a7
+}
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: #0f0f0f;
+}
+
+#home {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    font-family: 'neuemachina';
+    animation: flutuar 3s ease-in-out infinite;
+}
+
+h1 {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    color: #ffffff;
+    font-size: 130px;
+}
+
+.back {
+    font-family: 'neuemachinalight';
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
 }
