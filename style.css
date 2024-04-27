@@ -1,3 +1,4 @@
+/* Fontes usadas no portfólio */
 @font-face {
     font-family: 'neuemachina';
     src: url('Fonts/PPNeueMachina-InktrapRegular.otf');
@@ -13,27 +14,7 @@
     padding: 0;
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: 0.4s;
-}
-
-.logo {
-    font-size: 22px;
-    color: #ffffff;
-    letter-spacing: 4px;
-    text-transform: uppercase;
-    display: flex;
-    margin-left: 903px;
-    margin-top: 39px;
-    font-family: 'neuemachina';
-}
-
-a:hover {
-    opacity: 0.7;
-}
-
+/* Navegação do portfólio, header */
 nav {
     display: flex;
     align-items: center;
@@ -41,27 +22,39 @@ nav {
     font-family: 'roboto', sans-serif;
 }
 
+a {
+    color: #1b1b1b;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+
+.logo {
+    font-size: 22px;
+    color: #1b1b1b;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    display: flex;
+    margin-left: 92px;
+    margin-top: 39px;
+    font-family: 'neuemachina';
+}
+
 .nav-list {
     list-style: none;
     display: flex;
-    Align-items: center;
-    justify-content: end;
-    flex-grow: 1;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1%;
+    left: 50%;
+    transform: translateX(-50%);
     margin-top: 38px;
-    margin-right: 70px;
 }
-
-@keyframes flutuar {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-10px);
-    }
-    100% {
-      transform: translateY(0);
-    }
-  }
 
 .nav-list li {
     letter-spacing: 0px;
@@ -73,16 +66,41 @@ nav {
     color: #a7a7a7
 }
 
-
+/* Conteúdo do portfólio */
 body, html {
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #0f0f0f;
+    background-color: #ffffff;
+    background-image: url('');
+    background-size: cover;
+    background-position: center;
+    width:100%;
+    height: 100vh;
+    background-repeat: no-repeat
 }
 
+.bubble {
+    position: absolute;
+    margin-left: 1200px;
+    width: 30%;
+}
+
+/* Animação para o texto principal do "home" flutuar */
+@keyframes flutuar {
+    0% {    
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
 #home {
-    position: fixed;
+    position: absolute;
     width: 100%;
     height: 100%;
     font-family: 'neuemachina';
@@ -95,13 +113,25 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     margin: 0;
-    color: #ffffff;
-    font-size: 130px;
+    color: #1b1b1b;
+    font-size: 260px;
 }
 
-.back {
+.franca {
     font-family: 'neuemachinalight';
     display: flex;
-    justify-content: center;
     font-weight: 100;
+    margin-left: 200px;
+}
+
+.txtbelow {
+    margin-top: 450px;
+    margin-left: 340px;
+}
+
+#sobre {
+    position: absolute;
+    background-color: red;
+    margin-top: 13000px;
+    margin-left: 1000px;
 }
