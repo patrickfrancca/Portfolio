@@ -85,3 +85,13 @@ window.addEventListener('scroll', () => {
         updateIndicator(currentSectionIndex); // Atualiza o indicador
     }
 });
+
+//Arrumar deslocamento incorreto quando clica no botão preços da página "Sobre"
+document.querySelector('.b2 button').addEventListener('click', function(event) {
+    event.preventDefault();
+    const target = document.querySelector('#precos');
+    window.scrollTo({
+        top: target.offsetTop - 100, // Ajuste o valor 100 para o deslocamento desejado
+        behavior: 'smooth'
+    });
+});

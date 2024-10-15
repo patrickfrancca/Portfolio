@@ -14,6 +14,11 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+
 /* Cabeçalho*/
 
 body {
@@ -239,7 +244,7 @@ section {
     margin-right: 50%;
     margin-left: 6%;
     width: 40%;
-    margin-top: 10%;
+    margin-top: 160px;
 }
 
 .section2 p {
@@ -251,6 +256,7 @@ section {
     margin-left: 6%;
     width: 90%;
     margin-top: 10px;
+    line-height: 1.1;
 }
 
 /* Section 3 */
@@ -269,9 +275,84 @@ section {
     font-size: 2rem;
     font-family: 'neuemachinalight';
     width: 400px;
-    margin-left: 1326px;
-    
+    margin-left: 1326px;  
+    line-height: 1.1;
 }
+
+/* Section 4 */
+
+.contato {
+    height: 500vh;
+    display: block;
+    flex-direction: column;
+}
+
+.maincontato {
+    display: block;
+    font-family: 'neuemachinalight';
+    font-size: 4rem;
+    margin-right: 50%;
+    width: 40%;
+    margin-top: 10%;
+    align-items: start;
+    text-align: start;
+    margin-left: 6%;
+    margin-top: 225px;
+}
+
+.paragraphcontato {
+    display: block;
+    font-family: 'neuemachinalight';
+    font-size: 2rem;
+    line-height: 1.1;
+    max-width: 1000px;
+    width: 100%;
+    margin-top: 10px;
+    text-align: start;
+    margin-left: 6%;
+  
+  .button-log {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    color: var(--font-color);
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Botão */
+  .icon {
+    width: 24px;
+    height: 24px;
+    fill: var(--main-color);
+  }
+  
+  .button-log:active, .button-confirm:active {
+    box-shadow: 0px 0px var(--main-color);
+    transform: translate(3px, 3px);
+  }
+  
+  .button-confirm {
+    margin: 50px auto 0 auto;
+    width: 120px;
+    height: 40px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+  }  
+}
+
 
 /* Indicador */
 .indicator {
@@ -344,6 +425,10 @@ button {
     margin-top: 20px
   }
 
+  .b2 a {
+    text-decoration: none;
+  }
+
 /* Scroll */
 
 .btn {
@@ -360,6 +445,7 @@ button {
     transition: opacity 0.5s ease; /* Adicionando transição suave */
     opacity: 1; /* Totalmente visível no início */
     margin-top: 45%;
+    animation: float 3s ease-in-out infinite;
   }
   
   .btn.hidden {
@@ -421,4 +507,383 @@ button {
     scrollbar-width: thin;
     scrollbar-color: #b0b0b0 #f1f1f1; /* Cor do thumb e do track */
 }
+
+/* Cartão de preços */
+
+.card {
+    --font-color: #212121;
+    --font-color-sub: #666;
+    --bg-color: #F6F6F6;
+    --main-color: #212121;
+    --main-focus: #2df085;
+    width: 300px;
+    height: 370px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    font-family: 'neuemachina'; system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 53%;
+    margin-top: -370px;
+  }
+
+  .card2 {
+    --font-color: #212121;
+    --font-color-sub: #666;
+    --bg-color: #F6F6F6;
+    --main-color: #212121;
+    --main-focus: #2df085;
+    width: 300px;
+    height: 370px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    font-family: 'neuemachina'; system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 34%;
+    margin-top: -17%;
+  }
+
+  .card3 {
+    --font-color: #212121;
+    --font-color-sub: #666;
+    --bg-color: #F6F6F6;
+    --main-color: #212121;
+    --main-focus: #2df085;
+    width: 300px;
+    height: 370px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    box-shadow: 4px 4px var(--main-color);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+    font-family: 'neuemachina'; system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 15%;
+    margin-top: -370px;
+  }
   
+  .card:last-child {
+    justify-content: flex-end;
+  }
+
+  .card-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Faz com que o header ocupe o espaço necessário */
+}
+  
+  .card-title {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+    color: var(--font-color);
+    margin-bottom: 5%;
+    align-items: center;
+  }
+  
+  .card-subtitle {
+    font-size: px;
+    font-weight: 400;
+    color: var(--font-color-sub);
+    text-align: center;
+  }
+  
+  .card-divider {
+    width: 100%;
+    border: 1px solid var(--main-color);
+    border-radius: 50px;
+  }
+  
+  .card-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .card-price {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--font-color);
+    font-family: 'neuemachina', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card-price .old-price {
+    text-decoration: line-through;
+    color: #212121b6;
+    margin-right: 10px;
+}
+
+.card-price .new-price {
+    color: var(--main-focus);
+    font-size: 25px;
+    color: #212121;
+}
+  
+  .card-price span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #212121
+  }
+  
+  @keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px); /* Ajuste a altura da flutuação */
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+  .card-btn {
+    height: 35px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    padding: 0 15px;
+    transition: all 0.3s;
+  }
+  
+  .card-btn svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--main-color);
+    transition: all 0.3s;
+  }
+  
+  .card-img:hover {
+    transform: translateY(-3px);
+  }
+  
+  .card-btn:hover {
+    border: 2px solid var(--main-focus);
+  }
+  
+  .card-btn:hover svg {
+    fill: var(--main-focus);
+  }
+  
+  .card-btn:active {
+    transform: translateY(3px);
+  }
+
+  .card-btn1 {
+    height: 36px;
+    width: 58px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    padding: 0 15px;
+    transition: all 0.3s;
+  }
+  
+  .card-btn1 svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--main-color);
+    transition: all 0.3s;
+  }
+  
+  .card-btn1:hover {
+    border: 2px solid var(--main-focus);
+  }
+  
+  .card-btn1:hover svg {
+    fill: var(--main-focus);
+  }
+  
+  .card-btn1:active {
+    transform: translateY(3px);
+  }
+
+  .card-btn2 {
+    height: 36px;
+    width: 58px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    padding: 0 15px;
+    transition: all 0.3s;
+  }
+  
+  .card-btn2 svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--main-color);
+    transition: all 0.3s;
+  }
+  
+  .card-btn2:hover {
+    border: 2px solid var(--main-focus);
+  }
+  
+  .card-btn2:hover svg {
+    fill: var(--main-focus);
+  }
+  
+  .card-btn2:active {
+    transform: translateY(3px);
+  }
+
+  .card-btn3 {
+    height: 36px;
+    width: 58px;
+    background: var(--bg-color);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    padding: 0 15px;
+    transition: all 0.3s;
+  }
+  
+  .card-btn3 svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--main-color);
+    transition: all 0.3s;
+  }
+  
+  .card-btn3:hover {
+    border: 2px solid var(--main-focus);
+  }
+  
+  .card-btn3:hover svg {
+    fill: var(--main-focus);
+  }
+  
+  .card-btn3:active {
+    transform: translateY(3px);
+  }
+
+  /* Formulário de contato */ 
+  .form {
+    --input-focus: #ffffff;
+    --font-color: #212121;
+    --font-color-sub: #212121;
+    --bg-color: transparent;
+    --main-color: #212121;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 5px;
+    box-shadow: 4px 4px var(--main-color);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: -23%;
+    margin-right: 15%;
+    box-shadow: none;
+}
+
+.input {
+    width: 100%;
+    height: 58px;
+    width: 360px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 18px;
+    color: var(--font-color);
+    padding: 5px 10px;
+    outline: none;
+    font-family: 'neuemachina'
+}
+
+textarea.input {
+    height: auto;
+    resize: vertical;
+}
+
+.button-confirm {
+    margin: 50px auto 0 auto;
+    width: 144px;
+    height: 57px;
+    border-radius: 5px;
+    border: 2px solid var(--main-color);
+    background-color: var(--bg-color);
+    box-shadow: 4px 4px var(--main-color);
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--font-color);
+    cursor: pointer;
+    margin-top: 5px;
+    transition: box-shadow 0.3s, transform 0.3s; /* Transição suave para sombra e transformação */
+}
+
+.button-confirm:hover {
+    box-shadow: 6px 6px var(--main-color); /* Aumenta a sombra ao passar o mouse */
+}
+
+.button-confirm:active {
+    box-shadow: 0px 0px var(--main-color); /* Remove a sombra ao clicar */
+    transform: translate(3px, 3px); /* Move o botão levemente para baixo e para a direita */
+}
+
+.social-contact {
+    text-align: center; /* Centralizar o texto */
+    margin-top: 50px; /* Espaço acima do texto */
+    margin-left: 49%;
+    font-family: 'neuemachina'
+  }
+
+  .social-icons {
+    display: flex; /* Usar flexbox para organizar os ícones */
+    justify-content: center; /* Centralizar os ícones horizontalmente */
+    gap: 20px; /* Espaço entre os ícones */
+    margin-top: 1%;
+    
+  }
+
+  .redes {
+    font-size: 17px;
+  }
+  
+  .icon {
+    width: 50px; /* Mantém o tamanho do círculo */
+    height: 50px; /* Mantém o tamanho do círculo */
+    background-color: #F6F6F6; /* Cor de fundo */
+    padding: 10px; /* Espaçamento interno */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transição suave para sombra e movimento */
+    --main-color: #212121;
+    box-shadow: 4px 4px var(--main-color); /* Sombra inicial */
+    border: 2px solid #212121; /* Borda de 2px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo da imagem dentro do ícone */
+.icon img {
+    max-width: 60%; /* Reduz o tamanho da imagem do ícone */
+    max-height: 60%; /* Mantém a proporção do ícone */
+}
+
+/* Efeito de hover */
+.icon:hover {
+    box-shadow: 6px 6px var(--main-color); /* Aumenta a sombra suavemente ao passar o mouse */
+}
+
+/* Efeito de pressionar */
+.icon:active {
+    box-shadow: 0px 0px var(--main-color); /* Remove a sombra ao clicar */
+    transform: translate(3px, 3px); /* Move o ícone levemente para baixo e para a direita */
+}
