@@ -1052,9 +1052,10 @@ textarea.input {
   }
 
   /* Seção Home */
+
   .home {
     flex-direction: column;
-    margin-top: 47%;
+    padding-top: 21%;
   }
 
   .name .first-name {
@@ -1083,7 +1084,7 @@ textarea.input {
   }
 
   .indicator {
-    top: 55%;
+    top: 60%;
     left: 10px;
   }
 
@@ -1102,10 +1103,14 @@ textarea.input {
 
   /* Seção "Sobre" */
 
+  .section2 {
+    margin-top: -69%;
+  }
+
   .maintext {
-    font-size: 1.9rem; /* Diminuir o tamanho da fonte */
+    font-size: 2.1rem; /* Diminuir o tamanho da fonte */
     width: 100%;
-    text-align: center;
+
     margin: 0 auto;
     margin-top: 55%;
   }
@@ -1127,7 +1132,7 @@ textarea.input {
 
   .b2 {
     margin: 0 auto;
-    text-align: center;
+    text-align: start;
     margin-top: 20px;
   }
 
@@ -1151,6 +1156,7 @@ textarea.input {
   .section3 {
     display: flex;
     flex-direction: column; /* Empilhar os cartões verticalmente */
+    margin-top: -30%;
   }
 
   .card3 {
@@ -1175,16 +1181,17 @@ textarea.input {
   /* Seção "Contato" */
 
   .maincontato {
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-top: 10%;
     margin: 0px auto;
+    text-align: center;
     width: 100%;
   }
 
   .paragraphcontato {
-    font-size: 1rem;
+    font-size: 1.1rem;
     line-height: 1.1;
-    width: 100%;
+    width: 101%;
     text-align: start;
     margin: 0px auto;
     margin-top: 15px;
@@ -1205,32 +1212,19 @@ textarea.input {
     gap: 15px; /* Ajusta o espaço entre os ícones em telas menores */
     margin-top: 10%; /* Ajuste de margem para melhorar a visualização */
     width: 100%; /* Garante que ocupe toda a largura */
-    margin-left: -86px;
+    text-align: center;
+    margin-left: -70px;
   }
 
   .redes {
-    width: 100%; /* Garante que ocupe toda a largura */
-    margin-left: -86px;
+    width: 140%; /* Garante que ocupe toda a largura */
+    margin-left: -100px;
+    font-size: 18px;
+    word-wrap: break-word;
+
   }
 
-  /* Scroll */
-
-  .container_mouse {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    opacity: 1;
-    transition: opacity 0.5s ease;
-    width: 100%;
-    display: block;
-    margin-top: 40%;
-  }
-
-  .container_mouse.hidden {
-    opacity: 0;
-    pointer-events: none;
-  }
-
+/* Menu */
   .menu-mobile {
     display: block;
   }
@@ -1238,5 +1232,17 @@ textarea.input {
   .btn-abrir-menu i {
     display: block;
     margin-left: 20%;
+  }
+
+  .section3 {
+    padding-top: 150px;
+  }
+  
+  .contato {
+    padding-top: 50%;
+  }
+  
+  .section4 {
+    margin-top: 3%;
   }
 }
