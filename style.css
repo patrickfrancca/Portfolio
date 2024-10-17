@@ -35,20 +35,24 @@ section {
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0; 
-    width: 100vw;
-    z-index: 100;
-    backdrop-filter: blur(10px); 
-    background-color: #f6f6f6b6;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: 'neuemachina';
-    transition: top 0.6s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 0; 
+  width: 100vw;
+  z-index: 99; /* Maior que o overlay e menu */
+  backdrop-filter: blur(10px); /* Sem blur no cabeçalho */
+  background-color: rgba(246, 246, 246, 0.7); /* Cor do cabeçalho */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'neuemachina';
+  transition: top 0.6s ease-in-out;
+}
+
+.nav li a {
+  z-index: 300;
 }
 
 .logo {
@@ -62,6 +66,12 @@ section {
 .logo a {
     text-decoration: none; /* Remove o sublinhado */
     color: #212121; /* Define a cor do texto */
+}
+
+.nav {
+  display: flex;
+  justify-content: center; /* Centraliza o menu */
+  flex-grow: 1; /* Faz o menu ocupar o espaço entre o logo e os ícones */
 }
 
 .nav ul  {
@@ -90,6 +100,88 @@ section {
     color: #747474;
     transition: color 0.3s;
 }
+
+/* Mobile Menu */
+
+.btn-abrir-menu i {
+  color: #080808;
+  font-size: 38px;
+  margin: 20px;
+  display: none;
+  margin-top: 27px;
+}
+
+.menu-mobile {
+  background-color: #ffffff;
+  height: 100vh; /* Altura total da tela */
+  width: 0; /* Inicialmente escondido */
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 10000; /* Maior que o overlay */
+  font-family: 'neuemachina';
+  text-decoration: none;
+  overflow: hidden;
+  transition: width 0.5s ease; /* Transição suave */
+  display: none;
+}
+
+.menu-mobile.abrir-menu {
+  width: 70%; /* Largura total quando aberto */
+}
+
+.menu-mobile.abrir-menu ~ .overlay-menu {
+  display: block;
+}
+
+.menu-mobile .btn-fechar {
+  padding: 0 8%;
+  text-align: right;
+  height: 50px; /* Defina a altura que deseja */
+  line-height: 50px; /* Centraliza o ícone verticalmente */
+}
+
+.menu-mobile .btn-fechar i{
+  color: #000000;
+  font-size: 18px
+}
+
+.menu-mobile nav ul {
+  text-align: left;
+  list-style-type: none; /* Remove os marcadores da lista */
+  padding: 0; /* Remove o preenchimento padrão da lista */
+  margin: 0; /* Remove a margem padrão da lista */
+}
+
+.menu-mobile nav ul li {
+  margin: 0; /* Remove a margem da lista de itens */
+}
+
+.menu-mobile nav ul li a {
+  color: #020202;
+  font-size: 17px;
+  text-decoration: none;
+  padding: 25px 8%;
+  display: block; /* Faz com que o link ocupe todo o espaço do item da lista */
+}
+
+.menu-mobile nav ul li a:hover {
+  background-color: #F6F6F6;
+  color: #212121;
+}
+
+.overlay-menu {
+  display: none; /* Inicialmente escondido */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Ocupa toda a largura da tela */
+  height: 100%; /* Ocupa toda a altura da tela */
+  backdrop-filter: blur(5px); /* Efeito de desfoque */
+  background-color: rgba(255, 255, 255, 0.5); /* Cor de fundo com transparência */
+  z-index: 9999; /* Abaixo do menu, mas acima de outros conteúdos */
+}
+
 
 /* Botão Dark mode */
 /* The switch - the box around the slider */
@@ -245,10 +337,12 @@ section {
     margin-left: 6%;
     width: 40%;
     margin-top: 160px;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
 }
 
 .section2 p {
-    display: block;
     font-family: 'neuemachinalight';
     font-size: 2rem;
     line-height: 0.9;
@@ -257,6 +351,9 @@ section {
     width: 90%;
     margin-top: 10px;
     line-height: 1.1;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
 }
 
 /* Section 3 */
@@ -387,7 +484,7 @@ button {
     --button_radius: 0.75em;
     --button_color: #F6F6F6;
     --button_outline_color: #212121;
-    font-size: 17px;
+    font-size: 13px;
     font-weight: bold;
     border: none;
     cursor: pointer;
@@ -407,6 +504,7 @@ button {
     color: var(--button_outline_color);
     transform: translateY(-0.2em);
     transition: transform 0.1s ease;
+    font-size: 18px;
   }
   
   button:hover .button_top {
@@ -479,6 +577,39 @@ button {
       transform: translateY(90%);
     }
   }
+
+  /* Scroll dispositivos móveis */
+
+.mouse-btn {
+  margin: 10px auto;
+  width: 30px;
+  height: 60px;
+  border: 3px solid rgba(218, 218, 218, 0.918);
+  border-radius: 20px;
+  display: flex;
+}
+
+.mouse-scroll {
+  display: block;
+  width: 10px;
+  height: 10px;
+  background: linear-gradient(170deg, rgba(122, 122, 124, 0.918), rgb(123, 124, 124));
+  border-radius: 50%;
+  margin: auto;
+  animation: scrolling13 1s linear infinite;
+}
+
+@keyframes scrolling13 {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(20px);
+  }
+}
 
 /* Barra de rolagem */
 
@@ -850,7 +981,7 @@ textarea.input {
     justify-content: center; /* Centralizar os ícones horizontalmente */
     gap: 20px; /* Espaço entre os ícones */
     margin-top: 1%;
-    
+
   }
 
   .redes {
@@ -886,4 +1017,226 @@ textarea.input {
 .icon:active {
     box-shadow: 0px 0px var(--main-color); /* Remove a sombra ao clicar */
     transform: translate(3px, 3px); /* Move o ícone levemente para baixo e para a direita */
+}
+
+.desktop-text {
+  display: block; /* Exibe o texto para desktop por padrão */
+}
+
+.mobile-text {
+  display: none; /* Oculta o texto para desktop */
+}
+
+.desktop-textsobre {
+  display: block; /* Exibe o texto no desktop */
+}
+
+.mobile-textsobre {
+  display: none; /* Oculta o texto para mobile por padrão */
+}
+
+.container_mouse {
+  display: none; /* Não mostrar o scroll em telas maiores */
+}
+
+
+@media screen and (max-width: 768px) {
+
+  /* Header*/
+  .logo {
+    margin-left: 2%;
+  }
+
+  .nav, .switch {
+    display: none;
+  }
+
+  /* Seção Home */
+  .home {
+    flex-direction: column;
+    margin-top: 47%;
+  }
+
+  .name .first-name {
+    font-size: 5rem;
+  }
+
+  .name .last-name {
+    font-size: 5rem;
+    text-indent: -27px;
+  }
+
+  .section p {
+    margin: 11px 0;
+    padding: 10px;
+    line-height: 1.1;
+    font-family: 'neuemachinalight';
+    font-size: 25px;
+  }
+
+  .desktop-text {
+    display: none; /* Oculta o texto para desktop */
+  }
+
+  .mobile-text {
+    display: block; /* Exibe o texto para mobile */
+  }
+
+  .indicator {
+    top: 55%;
+    left: 10px;
+  }
+
+  .dot {
+    width: 2px;
+    height: 30px;
+  }
+
+  .btn {
+    display: none;
+  }
+
+  .button_top {
+    font-size: 15px;
+  }
+
+  /* Seção "Sobre" */
+
+  .maintext {
+    font-size: 1.9rem; /* Diminuir o tamanho da fonte */
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 55%;
+  }
+
+  .section2 p {
+    font-size: 1rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 15px;
+  }
+
+  .desktop-textsobre {
+    display: none; /* Oculta o texto do desktop em dispositivos móveis */
+  }
+
+  .mobile-textsobre {
+    display: block; /* Exibe o texto para mobile */
+  }
+
+  .b2 {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  /* Seção "Preços" */
+
+  .maintext2 {
+    text-align: center;
+    font-size: 3rem;
+    margin-top: 13%;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .paragraphprecos {
+    text-align: center;
+    font-size: 1rem;
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .section3 {
+    display: flex;
+    flex-direction: column; /* Empilhar os cartões verticalmente */
+  }
+
+  .card3 {
+    padding: 20px;
+    margin: 20px auto;
+    order: 1;
+    margin-top: 30px;
+  }
+
+  .card {
+    padding: 20px;
+    margin: 20px auto;
+    order: 3;
+  }
+
+  .card2 {
+    padding: 20px;
+    margin: 20px auto;
+    order: 2;
+  }
+
+  /* Seção "Contato" */
+
+  .maincontato {
+    font-size: 3rem;
+    margin-top: 10%;
+    margin: 0px auto;
+    width: 100%;
+  }
+
+  .paragraphcontato {
+    font-size: 1rem;
+    line-height: 1.1;
+    width: 100%;
+    text-align: start;
+    margin: 0px auto;
+    margin-top: 15px;
+  }
+
+  .form {
+    margin-top: 30px;
+  }
+
+  .input {
+    width: 290px;
+    font-size: 18px;
+  }
+
+  .social-icons {
+    display: flex; /* Garante flexbox para layout responsivo */
+    justify-content: center; /* Centraliza os ícones horizontalmente */
+    gap: 15px; /* Ajusta o espaço entre os ícones em telas menores */
+    margin-top: 10%; /* Ajuste de margem para melhorar a visualização */
+    width: 100%; /* Garante que ocupe toda a largura */
+    margin-left: -86px;
+  }
+
+  .redes {
+    width: 100%; /* Garante que ocupe toda a largura */
+    margin-left: -86px;
+  }
+
+  /* Scroll */
+
+  .container_mouse {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    width: 100%;
+    display: block;
+    margin-top: 40%;
+  }
+
+  .container_mouse.hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .menu-mobile {
+    display: block;
+  }
+
+  .btn-abrir-menu i {
+    display: block;
+    margin-left: 20%;
+  }
 }

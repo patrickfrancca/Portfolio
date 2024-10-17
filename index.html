@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>Patrick França | Solicite o seu site</title>
 </head>
 <body>
@@ -23,12 +24,35 @@
             </ul>
         </nav>
 
+        <div class="btn-abrir-menu" id="btn-menu">
+            <i class="bi bi-list-nested"></i>
+        </div>
+
         <!-- Botão Dark mode -->
         <label class="switch">
           <input type="checkbox">
           <span class="slider"></span>
         </label>
+
     </header>
+
+    <div class="menu-mobile" id="menu-mobile">
+        <div class="btn-fechar">
+            <i class="bi bi-x-lg"></i>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#precos">Preços</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <div class="overlay-menu"></div>
 
     <!-- Conteúdo -->
     <main class="main-content">
@@ -37,13 +61,24 @@
             <div class="name">
                 <p><span class="first-name">patrick</span> <span class="last-name">frança</span></p>
             </div>
-            <p>Transformando ideias em realidade digital, desenvolvendo sites <br> personalizados que elevam sua presença online e impulsionam <br> os resultados do seu projeto, empresa ou organização.</p>
+                <p class="desktop-text">Transformando ideias em realidade digital, desenvolvendo sites <br> personalizados que elevam sua presença online e impulsionam <br> os resultados do seu projeto, empresa ou organização.</p>
+                <p class="mobile-text">Transformando ideias em sites que elevam sua presença online.</p>
+            </div>
 
             <a href="https://wa.me/41996826364/?text=Olá Patrick! Gostaria de saber mais sobre como posso ter um site personalizado com você." target="_blank" ="button">
                 <button>
                     <span class="button_top" <a href=""> Contate-me </span>
                 </button>
             </a>
+            
+            <!-- Scroll dispositivos móveis -->
+            <div class="container_mouse">
+                <span class="mouse-btn">
+                  <span class="mouse-scroll"></span>
+                </span>
+              </div>
+              
+            
             <!-- Indicador de página -->
             <div class="indicator">
                 <div class="dot" id="dot1"></div>
@@ -61,7 +96,10 @@
         <!-- Section "Sobre" -->
         <section id="sobre" class="section2">
             <h2 class="maintext">Patrick, expert em criar sites que elevam sua presença online.</h2>
-            <p>Especializado na criação de sites personalizados, ofereço soluções digitais que transformam a presença online de pessoas, empresas e organizações. Focado em eficiência e escalabilidade, entrego resultados que impulsionam negócios e elevam marcas a novos patamares.</p>
+            <p class="desktop-textsobre">Especializado na criação de sites personalizados, ofereço soluções digitais que transformam a presença online de pessoas, empresas e organizações. Focado em eficiência e escalabilidade, entrego resultados que impulsionam negócios e elevam marcas a novos patamares.</p>
+            <p class="mobile-textsobre">
+                Especialista em sites personalizados, ofereço soluções digitais que transformam a presença online de pessoas e empresas. Com foco em eficiência e escalabilidade, entrego resultados que impulsionam negócios e elevam marcas.
+            </p>
 
             <a href="#precos">
                 <div class="b2">
