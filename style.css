@@ -137,12 +137,13 @@ section {
 .menu-mobile .btn-fechar {
   padding: 0 8%;
   text-align: right;
-  height: 50px; /* Defina a altura que deseja */
+  height: 100px; /* Defina a altura que deseja */
   line-height: 50px; /* Centraliza o ícone verticalmente */
+  margin-top: 40px;
 }
 
 .menu-mobile .btn-fechar i{
-  color: #000000;
+  color: #212121;
   font-size: 18px
 }
 
@@ -158,10 +159,11 @@ section {
 }
 
 .menu-mobile nav ul li a {
-  color: #020202;
+  color: #212121;
   font-size: 17px;
+  margin-top: -15%;
   text-decoration: none;
-  padding: 25px 8%;
+  padding: 50px 8%;
   display: block; /* Faz com que o link ocupe todo o espaço do item da lista */
 }
 
