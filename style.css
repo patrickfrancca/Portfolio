@@ -1055,7 +1055,7 @@ textarea.input {
 
   .home {
     flex-direction: column;
-    padding-top: 21%;
+    padding-top: 29%;
   }
 
   .name .first-name {
@@ -1104,13 +1104,12 @@ textarea.input {
   /* Seção "Sobre" */
 
   .section2 {
-    margin-top: -69%;
+    margin-top: -71%;
   }
 
   .maintext {
-    font-size: 2.1rem; /* Diminuir o tamanho da fonte */
+    font-size: 2.0rem; /* Diminuir o tamanho da fonte */
     width: 100%;
-
     margin: 0 auto;
     margin-top: 55%;
   }
@@ -1139,7 +1138,7 @@ textarea.input {
   /* Seção "Preços" */
 
   .maintext2 {
-    text-align: center;
+    text-align: end;
     font-size: 3rem;
     margin-top: 13%;
     width: 100%;
@@ -1147,34 +1146,34 @@ textarea.input {
   }
 
   .paragraphprecos {
-    text-align: center;
-    font-size: 1rem;
-    width: 100%;
-    margin-left: 0px;
+    text-align: end;
+    font-size: 1.1rem;
+    width: 75%;
+    margin-left: 25%;
   }
 
   .section3 {
     display: flex;
     flex-direction: column; /* Empilhar os cartões verticalmente */
-    margin-top: -30%;
+    margin-top: -50%;
   }
 
   .card3 {
     padding: 20px;
-    margin: 20px auto;
+    margin: 20px -12px;
     order: 1;
     margin-top: 30px;
   }
 
   .card {
     padding: 20px;
-    margin: 20px auto;
+    margin: 20px -12px;
     order: 3;
   }
 
   .card2 {
     padding: 20px;
-    margin: 20px auto;
+    margin: 20px -12px;
     order: 2;
   }
 
@@ -1182,9 +1181,9 @@ textarea.input {
 
   .maincontato {
     font-size: 2.5rem;
-    margin-top: 10%;
+    margin-top: 15%;
     margin: 0px auto;
-    text-align: center;
+    text-align: start;
     width: 100%;
   }
 
