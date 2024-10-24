@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <title>Patrick França | Solicite o seu site</title>
 </head>
 <body>
@@ -25,11 +24,15 @@
             </ul>
         </nav>
 
-        <!-- Botão Dark mode -->
-        <label class="switch">
-          <input type="checkbox">
-          <span class="slider"></span>
-        </label>
+        <div class="dark-mode-container">
+            <h1 class="txt-dark">Light/Dark</h1>
+            <div class="vertical-hr-nav"></div>
+            <!-- Botão Dark mode -->
+            <label class="switch">
+            <input type="checkbox">
+            <span class="slider"></span>
+            </label>
+        </div>
 
     </header>
 
@@ -48,7 +51,7 @@
                 </div>
                 
                     <div class="button">
-                        <a href="https://wa.me/41996826364/?text=Olá Patrick! Gostaria de saber mais sobre como posso ter um site personalizado com você." target="_blank" ="button">
+                        <a href="https://wa.me/4197436174/?text=Olá Patrick! Gostaria de saber mais sobre como posso ter um site personalizado com você." target="_blank" ="button">
                             <button>
                             <span class="button_top" <a href=""> Contate-me </span>
                             </button>
@@ -100,59 +103,115 @@
         <section id="precos" class="section3">
             <div class="interface-precos">
                 <div class="itens-container-precos">
-                    <div class="txt-itens-precos">
+                    <header class="txt-itens-precos">
                         <h2>Preços</h2>
                         <p>Faça a sua escolha, e <br> compartilhe as suas <br>preferências para <br> finalizarmos com um <br>site incrível para você.</p>
-                    </div>
-
+                    </header>
+        
                     <div class="vertical-hr2"></div>
-
+        
                     <div class="card-itens">
-                        <!-- Card Portfólio -->
-                        <div class="card">
-                            <div class="card-img"><div class="img"></div></div>
-                            <div class="card-title">Product title</div>
-                            <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                            <hr class="card-divider">
-                            <div class="card-footer">
-                                <div class="card-price"><span>$</span> 123.45</div>
-                                <button class="card-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
-                                </button>
+                        <article class="card-container">
+                            <!-- Card Portfólio -->
+                            <div class="card">
+                                <header class="card-header1">
+                                    <h3 class="card-title">Portfólio</h3>
+                                    <p class="card-subtitle">Transforme suas habilidades em presença digital: um portfólio que destaca sua essência e abre portas para oportunidades inesquecíveis.</p>
+                                </header>
+                                <hr class="card-divider1">
+                                <footer class="card-footer">
+                                    <div class="price-wrapper">
+                                        <span class="old-price">R$ 749,90</span>
+                                        <div class="card-price"><span>R$</span> 549,90</div>
+                                    </div>
+                                    <button class="card-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path>
+                                            <path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path>
+                                            <path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path>
+                                            <path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path>
+                                        </svg>
+                                    </button>
+                                </footer>
                             </div>
-                        </div>
-                        
-                        <!-- Card Empresas -->
-                        <div class="card">
-                            <div class="card-img"><div class="img"></div></div>
-                            <div class="card-title">Product title</div>
-                            <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                            <hr class="card-divider">
-                            <div class="card-footer">
-                                <div class="card-price"><span>$</span> 123.45</div>
-                                <button class="card-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
-                                </button>
+                            <div class="info">
+                                <p>Parcelamento em<br> até 12x com juros</p>
+                                <hr class="info-hr">
+                                <p>Até 5 páginas (seções)</p>
+                                <hr class="info-hr">
+                                <p>Prazo: 5 dias</p>
                             </div>
-                        </div>
-
-                        <!-- Card Landing Page -->
-                        <div class="card">
-                            <div class="card-img"><div class="img"></div></div>
-                            <div class="card-title">Product title</div>
-                            <div class="card-subtitle">Product description. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
-                            <hr class="card-divider">
-                            <div class="card-footer">
-                                <div class="card-price"><span>$</span> 123.45</div>
-                                <button class="card-btn">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path><path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path><path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path></svg>
-                                </button>
+                        </article>
+        
+                        <article class="card-container">
+                            <!-- Card Empresas -->
+                            <div class="card">
+                                <header>
+                                    <h3 class="card-title">Empresas</h3>
+                                    <p class="card-subtitle">Impressione seus clientes desde o primeiro clique com uma página principal envolvente e profissional para a sua empresa.</p>
+                                </header>
+                                <hr class="card-divider">
+                                <footer class="card-footer">
+                                    <div class="price-wrapper">
+                                        <span class="old-price">R$ 849,90</span>
+                                        <div class="card-price"><span>R$</span> 649,90</div>
+                                    </div>
+                                    <button class="card-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path>
+                                            <path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path>
+                                            <path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path>
+                                            <path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path>
+                                        </svg>
+                                    </button>
+                                </footer>
                             </div>
-                        </div>  
+                            <div class="info">
+                                <p>Parcelamento em<br> até 12x com juros</p>
+                                <hr class="info-hr">
+                                <p>Até 5 páginas (seções)</p>
+                                <hr class="info-hr">
+                                <p>Prazo: 5 dias</p>
+                            </div>
+                        </article>
+        
+                        <article class="card-container">
+                            <!-- Card Landing Page -->
+                            <div class="card">
+                                <header>
+                                    <h3 class="card-title">Landing Page</h3>
+                                    <p class="card-subtitle">Maximize seu faturamento com um página de venda, feita para tornar visitantes em clientes e aumentar seus resultados ao máximo.</p>
+                                </header>
+                                <hr class="card-divider">
+                                <footer class="card-footer">
+                                    <div class="price-wrapper">
+                                        <span class="old-price">R$ 949,90</span>
+                                        <div class="card-price"><span>R$</span> 749,90</div>
+                                    </div>
+                                    <button class="card-btn">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                            <path d="m397.78 316h-205.13a15 15 0 0 1 -14.65-11.67l-34.54-150.48a15 15 0 0 1 14.62-18.36h274.27a15 15 0 0 1 14.65 18.36l-34.6 150.48a15 15 0 0 1 -14.62 11.67zm-193.19-30h181.25l27.67-120.48h-236.6z"></path>
+                                            <path d="m222 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path>
+                                            <path d="m368.42 450a57.48 57.48 0 1 1 57.48-57.48 57.54 57.54 0 0 1 -57.48 57.48zm0-84.95a27.48 27.48 0 1 0 27.48 27.47 27.5 27.5 0 0 0 -27.48-27.47z"></path>
+                                            <path d="m158.08 165.49a15 15 0 0 1 -14.23-10.26l-25.71-77.23h-47.44a15 15 0 1 1 0-30h58.3a15 15 0 0 1 14.23 10.26l29.13 87.49a15 15 0 0 1 -14.23 19.74z"></path>
+                                        </svg>
+                                        </svg>
+                                    </button>
+                                </footer>
+                            </div>
+                            <div class="info">
+                                <p>Parcelamento em<br> até 12x com juros</p>
+                                <hr class="info-hr">
+                                <p>Até 5 páginas (seções)</p>
+                                <hr class="info-hr">
+                                <p>Prazo: 5 dias</p>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
         </section>
+        
 
         <hr>
 
