@@ -21,7 +21,7 @@ html {
 hr {
   height: 2px; /* Altura da linha */
   border: none; /* Remove a borda padrão */
-  background-color: #e6e6e693; /* Cor da linha */
+  background-color: #212121; /* Cor da linha */
   width: 70%; /* Ajuste a largura conforme necessário */
   margin: 10px auto; /* Margem acima e abaixo, e centraliza */
   border-radius: 10px;
@@ -36,6 +36,7 @@ body {
   padding: 0;
   scroll-behavior: smooth; /* Para rolagem suave no navegador */
   overflow-x: hidden;
+  transition: 0.3s;
 }
 
 section {
@@ -58,6 +59,7 @@ section {
   align-items: center;
   font-family: "neuemachina";
   transition: top 0.6s ease-in-out;
+  transition: 0.3s;
 }
 
 .nav li a {
@@ -114,12 +116,190 @@ section {
   transition: color 0.3s;
 }
 
+/* Estilo da página no modo dark*/
+
+body.dark-mode {
+  background-color: #0C0D11;
+  transition: 0.3s;
+}
+
+body.dark-mode .header {
+  background-color: #0c0d11ce; /* Cor do cabeçalho */
+  border-bottom: 1px solid rgba(224, 224, 224, 0.1);
+  transition: 0.3s;
+  backdrop-filter: blur(10px);
+}
+
+body.dark-mode .logo a {
+  color: #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode .nav ul li a {
+  color: #f6f6f6;
+  transition: 0.3s
+}
+
+body.dark-mode .nav ul li a:hover {
+  color: #b8b8b8;
+  transition: 0.3s
+}
+
+body.dark-mode .txt-dark {
+  color: #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode .vertical-hr-nav {
+  border-left: 2px solid #2b2b2b8f;
+  transition: 0.3s;
+}
+
+body.dark-mode .first-name {
+  color: #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode .last-name {
+  color: #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode .desktop-text {
+  color: #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode button {
+  --button_color: #0C0D11;
+  --button_outline_color: #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode .dot {
+background-color: #292929;
+transition: 0.3s;
+}
+
+body.dark-mode .active {
+background-color: #f6f6f6;
+transition: 0.3s;
+}
+
+body.dark-mode .txt-sobre {
+color: #f6f6f6;
+transition: 0.3s;
+}
+
+body.dark-mode .card {
+  --font-color: #f6f6f6;
+  --font-color-sub: #a0a0a0;
+  --bg-color: #transparent;
+  --main-color: #f6f6f6;
+  --main-focus: #2df085;
+  transition: 0.3s;
+}
+
+body.dark-mode .cifra {
+  color: #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode .txt-itens-precos {
+  color: #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode .info {
+  color: #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode hr {
+  background-color: #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode .vertical-hr-nav {
+  border-left: 2px solid #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode .vertical-hr {
+  border-left: 2px solid #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode .vertical-hr2 {
+  border-left: 2px solid #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode .txt-itens {
+  color: #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode .form {
+  --input-focus: #f6f6f6;
+  --font-color: #f6f6f6;
+  --font-color-sub: #f6f6f6;
+  --bg-color: transparent;
+  --main-color: #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode .social-contact {
+  color: #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode .icon {
+  background-color: transparent; /* Cor de fundo */
+  transition: box-shadow 0.3s ease, transform 0.3s ease; /* Transição suave para sombra e movimento */
+  --main-color: #f6f6f6;
+  box-shadow: 4px 4px var(--main-color); /* Sombra inicial */
+  border: 2px solid #f6f6f6; /* Borda de 2px */
+  transition: 0.3s;
+}
+
+body.dark-mode .icon:hover {
+  box-shadow: 6px 6px var(--main-color); /* Aumenta a sombra suavemente ao passar o mouse */
+  transition: 0.3s;
+}
+
+body.dark-mode .icon:active {
+  box-shadow: 0px 0px var(--main-color); /* Remove a sombra ao clicar */
+  transform: translate(
+    3px,
+    3px
+  ); /* Move o ícone levemente para baixo e para a direita */
+  transition: 0.3s;
+}
+
+body.dark-mode .switch {
+  /* Variables */
+  --switch_width: 2em;
+  --switch_height: 1em;
+  --thumb_color: #0C0D11;
+  --track_active_color: #0C0D11;
+  --outline_color: #f6f6f6;
+  transition: 0.3s;
+}
+
+body.dark-mode .icon {
+  filter: invert(1);
+  --main-color: #212121;
+  box-shadow: 4px 4px var(--main-color); /* Sombra inicial */
+  border: 2px solid #212121; /* Borda de 2px */
+  transition: 0.3s;
+}
 /* Botão Dark mode */
 /* The switch - the box around the slider */
 
 .vertical-hr-nav {
-  border-left: 2px solid #e6e6e68f; /* Cria uma borda esquerda que se parece com uma linha vertical */
-  height: 30px; /* Altura da linha */
+  border-left: 2px solid #212121; /* Cria uma borda esquerda que se parece com uma linha vertical */
+  height: 23px; /* Altura da linha */
   margin: 0 5px; /* Espaçamento em torno da linha */
   display: flex;
 }
@@ -359,7 +539,7 @@ section.section3 {
 }
 
 .vertical-hr2 {
-  border-left: 2px solid #e6e6e68f; /* Cria uma borda esquerda que se parece com uma linha vertical */
+  border-left: 2px solid #212121; /* Cria uma borda esquerda que se parece com uma linha vertical */
   height: 270px; /* Altura da linha */
   margin: 0 60px; /* Espaçamento em torno da linha */
   display: flex;
@@ -583,7 +763,7 @@ section.section4 {
 }
 
 .vertical-hr {
-  border-left: 2px solid #e6e6e665; /* Cria uma borda esquerda que se parece com uma linha vertical */
+  border-left: 2px solid #212121; /* Cria uma borda esquerda que se parece com uma linha vertical */
   height: 400px; /* Altura da linha */
   margin: 0 130px; /* Espaçamento em torno da linha */
   display: flex;
