@@ -119,7 +119,7 @@ section {
 /* Estilo da página no modo dark*/
 
 body.dark-mode {
-  background-color: #0C0D11;
+  background-color: #0c0d11;
   transition: 0.3s;
 }
 
@@ -137,12 +137,12 @@ body.dark-mode .logo a {
 
 body.dark-mode .nav ul li a {
   color: #f6f6f6;
-  transition: 0.3s
+  transition: 0.3s;
 }
 
 body.dark-mode .nav ul li a:hover {
   color: #b8b8b8;
-  transition: 0.3s
+  transition: 0.3s;
 }
 
 body.dark-mode .txt-dark {
@@ -171,24 +171,24 @@ body.dark-mode .desktop-text {
 }
 
 body.dark-mode button {
-  --button_color: #0C0D11;
+  --button_color: #0c0d11;
   --button_outline_color: #f6f6f6;
   transition: 0.3s;
 }
 
 body.dark-mode .dot {
-background-color: #292929;
-transition: 0.3s;
+  background-color: #292929;
+  transition: 0.3s;
 }
 
 body.dark-mode .active {
-background-color: #f6f6f6;
-transition: 0.3s;
+  background-color: #f6f6f6;
+  transition: 0.3s;
 }
 
 body.dark-mode .txt-sobre {
-color: #f6f6f6;
-transition: 0.3s;
+  color: #f6f6f6;
+  transition: 0.3s;
 }
 
 body.dark-mode .card {
@@ -281,8 +281,8 @@ body.dark-mode .switch {
   /* Variables */
   --switch_width: 2em;
   --switch_height: 1em;
-  --thumb_color: #0C0D11;
-  --track_active_color: #0C0D11;
+  --thumb_color: #0c0d11;
+  --track_active_color: #0c0d11;
   --outline_color: #f6f6f6;
   transition: 0.3s;
 }
@@ -427,6 +427,7 @@ input:hover:checked + .slider:before {
 }
 
 .desktop-text {
+  max-width: 1000px;
   font-size: 30px;
   margin-top: 35px;
   font-weight: 5;
@@ -472,16 +473,19 @@ input:hover:checked + .slider:before {
   text-align: start;
   font-family: "neuemachina";
   margin-left: 79px;
+  flex-wrap: wrap;
 }
 
 .maintext {
   font-size: 4rem;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 10px;
 }
 
 .section2 p {
+  max-width: 1200px;
   font-size: 2rem;
   width: 100%;
   gap: 20px;
@@ -524,6 +528,7 @@ section.section3 {
 }
 
 .section3 .txt-itens-precos p {
+  max-width: 400px;
   font-size: 2rem;
   font-family: "neuemachinalight";
 }
@@ -603,11 +608,6 @@ section.section3 {
   flex-direction: column;
   align-items: center; /* Centraliza horizontalmente */
   text-align: center; /* Alinha o texto ao centro */
-}
-
-.card-title {
-  font-size: 24px;
-  font-weight: bold;
 }
 
 .card-subtitle {
@@ -760,6 +760,7 @@ section.section4 {
 .itens-container .txt-itens p {
   font-size: 2em;
   font-family: "neuemachinalight";
+  max-width: 900px;
 }
 
 .vertical-hr {
@@ -1284,4 +1285,107 @@ textarea.input {
     3px,
     3px
   ); /* Move o ícone levemente para baixo e para a direita */
+}
+
+@media screen and (max-width: 1765px) {
+  .section3 .card-itens {
+    gap: 15px;
+  }
+
+  .maintext {
+    font-size: 4rem;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .section2 p {
+    font-size: 2rem;
+    width: 100%;
+    gap: 30px;
+    font-family: "neuemachinalight";
+  }
+
+  .section2 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section2 .interface {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    margin-right: 79px;
+  }
+
+  .txt-sobre {
+    text-align: center;
+    font-family: "neuemachina";
+    font-size: 10px;
+  }
+
+  .section3 .txt-itens-precos {
+    text-align: center;
+    margin-right: 0px;
+  }
+
+  .vertical-hr2 {
+    display: none;
+  }
+
+  .section3 .itens-container-precos {
+    flex-direction: column;
+  }
+
+  .section3 .txt-itens-precos p {
+    max-width: 600px;
+  }
+
+  .section3 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .section3 .itens-container-precos {
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 245px;
+  }
+
+  .vertical-hr {
+    display: none;
+  }
+
+  .section4 .txt-itens {
+    text-align: center;
+  }
+
+  section.section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section4 .itens-container {
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .section4 .txt-itens {
+    text-align: center;
+    margin-right: 79px;
+  }
+}
+
+@media screen and (max-width: 1270px) {
 }
