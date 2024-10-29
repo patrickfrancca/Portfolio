@@ -93,3 +93,31 @@ toggleSwitch.addEventListener('change', () => {
         disableDarkMode();
     }
 });
+
+// Menu mobile
+
+// Seleciona o checkbox do botão do menu e o menu mobile
+let btnMenuMob = document.querySelector('#btn-menu-mob input[type="checkbox"]');
+let menuMobile = document.querySelector('#menu-mobile');
+let body = document.querySelector('body');
+
+// Função para alternar o menu
+btnMenuMob.addEventListener("change", () => { 
+    menuMobile.classList.toggle('abrir', btnMenuMob.checked);
+    body.classList.toggle('no-scroll', btnMenuMob.checked); // Aplica no-scroll ao invés de no-overflow
+});
+
+// Seleciona todos os links dentro do menu mobile
+const menuLinks = document.querySelectorAll("#menu-mobile nav a");
+
+// Adiciona um evento de clique em cada link
+menuLinks.forEach(link => {
+  link.addEventListener("click", () => {
+    // Desmarca o checkbox para fechar o menu
+    btnMenuMob.checked = false;
+    
+    // Remove as classes 'abrir' e 'no-scroll' do body
+    menuMobile.classList.remove('abrir');
+    body.classList.remove('no-scroll');
+  });
+});
