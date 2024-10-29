@@ -36,7 +36,7 @@ body {
   padding: 0;
   scroll-behavior: smooth; /* Para rolagem suave no navegador */
   overflow-x: hidden;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 section {
@@ -295,6 +295,7 @@ body.no-scroll {
 
 /* Estilo da página no modo dark*/
 
+
 body.dark-mode .menu-mobile nav a:hover {
   background-color: #f6f6f605;
 }
@@ -313,7 +314,7 @@ body.dark-mode .doti {
 
 body.dark-mode {
   background-color: #0c0d11;
-  transition: 0.3s;
+  transition: .3s;
 }
 
 body.dark-mode .header {
@@ -325,63 +326,51 @@ body.dark-mode .header {
 
 body.dark-mode .logo a {
   color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .nav ul li a {
   color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .nav ul li a:hover {
   color: #b8b8b8;
-  transition: 0.3s;
 }
 
 body.dark-mode .txt-dark {
   color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .vertical-hr-nav {
   border-left: 2px solid #2b2b2b8f;
-  transition: 0.3s;
 }
 
 body.dark-mode .first-name {
   color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .last-name {
   color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .desktop-text {
   color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode button {
   --button_color: #0c0d11;
   --button_outline_color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .dot {
   background-color: #292929;
-  transition: 0.3s;
 }
 
 body.dark-mode .active {
   background-color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .txt-sobre {
   color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .card {
@@ -390,47 +379,39 @@ body.dark-mode .card {
   --bg-color: #transparent;
   --main-color: #f6f6f6;
   --main-focus: #2df085;
-  transition: 0.3s;
+
 }
 
 body.dark-mode .cifra {
   color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .txt-itens-precos {
   color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .info {
   color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode hr {
   background-color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .vertical-hr-nav {
   border-left: 2px solid #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .vertical-hr {
   border-left: 2px solid #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .vertical-hr2 {
   border-left: 2px solid #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .txt-itens {
   color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .form {
@@ -439,12 +420,10 @@ body.dark-mode .form {
   --font-color-sub: #f6f6f6;
   --bg-color: transparent;
   --main-color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .social-contact {
   color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .icon {
@@ -453,12 +432,10 @@ body.dark-mode .icon {
   --main-color: #f6f6f6;
   box-shadow: 4px 4px var(--main-color); /* Sombra inicial */
   border: 2px solid #f6f6f6; /* Borda de 2px */
-  transition: 0.3s;
 }
 
 body.dark-mode .icon:hover {
   box-shadow: 6px 6px var(--main-color); /* Aumenta a sombra suavemente ao passar o mouse */
-  transition: 0.3s;
 }
 
 body.dark-mode .icon:active {
@@ -467,7 +444,6 @@ body.dark-mode .icon:active {
     3px,
     3px
   ); /* Move o ícone levemente para baixo e para a direita */
-  transition: 0.3s;
 }
 
 body.dark-mode .switch {
@@ -477,7 +453,6 @@ body.dark-mode .switch {
   --thumb_color: #0c0d11;
   --track_active_color: #0c0d11;
   --outline_color: #f6f6f6;
-  transition: 0.3s;
 }
 
 body.dark-mode .icon {
@@ -485,7 +460,6 @@ body.dark-mode .icon {
   --main-color: #212121;
   box-shadow: 4px 4px var(--main-color); /* Sombra inicial */
   border: 2px solid #212121; /* Borda de 2px */
-  transition: 0.3s;
 }
 
 body.dark-mode .mobile-text {
@@ -494,6 +468,10 @@ body.dark-mode .mobile-text {
 
 body.dark-mode .buttonscroll {
   display: none;
+}
+
+body.dark-mode .menuhr {
+  background-color: #f6f6f609;
 }
 
 /* Botão Dark mode */
@@ -666,7 +644,6 @@ input:hover:checked + .slider:before {
   display: flex;
   justify-content: start;
   align-items: center;
-  transition: 3s;
 }
 
 .section2 .interface {
@@ -690,7 +667,6 @@ input:hover:checked + .slider:before {
   width: 100%;
   margin: 0 auto;
   margin-bottom: 10px;
-  transition: 0.3s;
 }
 
 .section2 p {
@@ -699,7 +675,6 @@ input:hover:checked + .slider:before {
   width: 100%;
   gap: 20px;
   font-family: "neuemachinalight";
-  transition: 0.3s;
 }
 
 .section2 .txt-sobre span {
@@ -745,7 +720,6 @@ section.section3 {
   max-width: 400px;
   font-size: 2rem;
   font-family: "neuemachinalight";
-  transition: 0.3s
 }
 
 .section3 .card-itens {
@@ -948,7 +922,6 @@ section.section4 {
   display: flex;
   justify-content: start; /* Centraliza o conteúdo horizontalmente */
   align-items: center; /* Centraliza o conteúdo verticalmente */
-  transition: 0.3s;
 }
 
 .section4 .itens-container {
@@ -971,14 +944,12 @@ section.section4 {
 
 .section4 .itens-container .txt-itens h2 {
   font-size: 4em;
-  transition: 0.3s;
 }
 
 .itens-container .txt-itens p {
   font-size: 2em;
   font-family: "neuemachinalight";
   max-width: 900px;
-  transition: 0.3s;
 }
 
 .mobile-text-contato {
@@ -1017,33 +988,6 @@ section.section4 {
   font-weight: 600;
   color: var(--font-color);
   cursor: pointer;
-}
-
-/* Indicador */
-.indicator {
-  position: fixed;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-}
-
-.dot {
-  width: 3px;
-  height: 30px;
-  border-radius: 0%;
-  background-color: lightgray;
-  margin: 5px 0;
-  transition: background-color 0.3s;
-}
-
-.active {
-  background-color: #212121;
-}
-
-.content {
-  margin-left: 40px;
 }
 
 /* Botão section Home*/
@@ -1546,6 +1490,7 @@ textarea.input {
 }
 
 @media screen and (max-width: 1765px) {
+
   .section3 .card-itens {
     gap: 15px;
   }
@@ -1646,405 +1591,379 @@ textarea.input {
   }
 }
 
-  @media screen and (max-width: 1295px) {
+@media screen and (max-width: 1295px) {
 
-    .menuhr {
-      background-color: #aaaaaa2a;
-    }
-
-    .txt-dark1 {
-      font-weight: 50;
-      font-family: 'neuemachinalight';
-    }
-
-    .dark-mode-container1 {
-      flex-direction: row-reverse;
-      display: flex;
-      text-align: start;
-      justify-content: start;
-      align-items: start;
-      margin-top: 40px;
-      gap: 13px;
-    }
-
-    header .nav, header .dark-mode-container{
-      display: none;
-    }
-
-    
-    .dark-mode-container1 {
-      flex-direction: row;
-      display: flex;
-      text-align: start;
-      justify-content: start;
-      align-items: start;
-      margin-top: 40px;
-    }
-
-    header .menu-mobile {
-      display: block;
-    }
-
-    /* Responsivo nav */
-    header .nav, header .dark-mode-containe{
-      display: none;
-    }
-
-    .btn-menu-mob {
-      display: block;  
-    }
-    
-
-    /* Responsivo Home */
-    .first-name {
-      font-size: 7em;
-    }
-
-    .last-name {
-      font-size: 7em;
-      text-indent: -20px;
-    }
-
-    .desktop-text {
-      max-width: 700px;
-      font-size: 25px;
-      margin-top: 20px;
-    }
-
-    /* Responsivo Sobre*/
-    .maintext {
-      font-size: 9em;
-      max-width: 700px;
-      margin-bottom: 10px;
-    }
-    
-    .section2 p {
-      max-width: 710px;
-      font-size: 4em;
-      width: 100%;
-      gap: 25px;
-      font-family: "neuemachinalight";
-    }
-
-    .section2 {
-      justify-content: center;
-    }
-    
-    .section2 .interface {
-      display: flex;
-      align-items: start;
-      justify-content: center;
-      height: 100%;
-      flex-direction: column;
-    }
-    
-    .txt-sobre {
-      text-align: start;
-      font-family: "neuemachina";
-      margin-left: 79px;
-      flex-wrap: wrap;
-    }
-
-    /* Responsivo Preços */
-    
-    .section3 .txt-itens-precos p {
-      max-width: 600px;
-      font-size: 1.8rem;
-      transition: 0.3s;
-    }
-
-    section.section3 {
-      height: 215vh;
-      display: flex;
-      align-items: center;
-    }
-
-    .card-container {
-      display: flex;
-      flex-direction: column; /* Alinha card e info em coluna */
-      align-items: center; /* Centraliza horizontalmente */
-      gap: 20px; /* Espaçamento entre o card e a info */
-      width: 300px; /* Define a largura padrão para o card e a info */
-    }
-
-    .section3 .card-itens {
-      display: flex;
-      gap: 240px;
-      margin-right: 50px;
-      flex-direction: column;
-      margin-left: 50px;
-    }
-
-    /* Responsivo Contato */
-
-    .section4 .itens-container .txt-itens h2 {
-      font-size: 3em;
-      max-width: 612px;
-      transition: 0.3s;
-    }
-
-    .itens-container .txt-itens p {
-      font-size: 1.5em;
-      max-width: 665px;
-      transition: 0.3s;
-    }
-
-  @media screen and (max-width: 878px) {
-
-    header .nav, header .dark-mode-container{
-      display: none;
-    }
-
-    .txt-dark1 {
-      font-weight: 50;
-      font-family: 'neuemachinalight';
-    }
-
-    .dark-mode-container1 {
-      flex-direction: row-reverse;
-      display: flex;
-      text-align: start;
-      justify-content: start;
-      align-items: start;
-      margin-top: 40px;
-      gap: 13px;
-    }
-
-    header .menu-mobile {
-      display: block;
-    }
-
-    .btn-menu-mob {
-      display: block;  
-    }
-    
-    .btn {
-      display: none;
-    }
-
-    .svg {
-      width: 22px;
-      height: 62px;
-      transform: rotate(180deg);
-    }
-
-    body.dark-mode .buttonscroll {
-      width: 30px;
-      height: 60px;
-      border: none;
-      border-radius: 50px;
-      background: #c2c3c579;
-      transition: all 0.3s ease-in-out;
-      transform: rotate(180deg);
-      display: inline-block;
-      cursor: pointer;
-      position: absolute;
-      margin-top: 500px;
-      pointer-events: none;
-    }
-
-    .buttonscroll {
-      width: 30px;
-      height: 60px;
-      border: none;
-      border-radius: 50px;
-      background: #c2c3c5;
-      transition: all 0.3s ease-in-out;
-      transform: rotate(180deg);
-      display: inline-block;
-      cursor: pointer;
-      position: absolute;
-      margin-top: 500px;
-      pointer-events: none;
-    }
-
-    .floating-container {
-      animation: float 3s ease-in-out infinite;
-    }
-
-    .section-home {
-      height: 60vh;
-      padding: 0;
-      min-height: unset;
-      flex-direction: column;
-    }
-  
-    /* Responsive Home */
-    .first-name {
-      font-size: 5em;
-    }
-  
-    .last-name {
-      font-size: 5em;
-      text-indent: -20px;
-    }
-  
-    .desktop-text {
-      max-width: 500px;
-      font-size: 20px;
-      margin-top: 20px;
-    }
-
-    .header {
-      padding: 30px 40px;
-      transition: 0.3s;
-    }
-
-    /* Responsivo Sobre */
-
-    .desktop-textsobre {
-      display: none;
-    }
-
-    .mobile-textsobre {
-      display: block;
-    }
-
-    .section2 {
-      height: 52vh;
-      display: flex;
-      justify-content: start;
-      align-items: center;
-      transition: 3s;
-      margin: 0;
-      padding: 0;
-      min-height: unset;
-    }
-    
-    .section2 .interface {
-      display: flex;
-      align-items: start;
-      justify-content: center;
-      height: 100%;
-      flex-direction: column;
-      margin: 0;
-    }
-
-    .maintext {
-      font-size: 6em;
-      max-width: 350px;
-      margin-bottom: 10px;
-      margin: 0;
-    }
-    
-    .section2 p {
-      max-width: 390px;
-      font-size: 3em;
-      width: 100%;
-      font-family: "neuemachinalight";
-      margin-top: 10px;
-    }
-
-    .section2 {
-      justify-content: center;
-    }
-    
-    .section2 .interface {
-      display: flex;
-      align-items: start;
-      justify-content: center;
-      height: 100%;
-      flex-direction: column;
-    }
-    
-    .txt-sobre {
-      text-align: start;
-      font-family: "neuemachina";
-      margin: 0;
-      flex-wrap: wrap;
-    }
-
-    .b2 {
-      margin: 0;
-      margin-top: 15px;
-    }
-
-    /* responsivo Preços */
-
-    .section3 .txt-itens-precos h2 {
-      font-size: 3em;
-    }
-
-    .section3 .txt-itens-precos p {
-      max-width: 380px;
-      font-size: 1.4rem;
-      transition: 0.3s;
-    }
-
-    .interface-precos {
-      max-height: 1986px;
-    }
-
-    /* Responsivo Contato */
-
-    .section4 .itens-container .txt-itens h2 {
-      font-size: 2em;
-      max-width: 612px;
-      transition: 0.3s;
-      text-align: center;
-    }
-
-    .itens-container .txt-itens p {
-      font-size: 1.3em;
-      max-width: 450px;
-      transition: 0.3s;
-      margin-top: 10px
-    }
-
-    section.section4 {
-      height: 96vh;
-      padding: 0;
-      min-height: unset;
-      flex-direction: column;
-    }
+  .menuhr {
+    background-color: #aaaaaa2a;
   }
 
-  @media screen and (max-width: 500px) {
 
-
-    .txt-dark1 {
-      font-weight: 50;
-      font-family: 'neuemachinalight';
-    }
-
-    .dark-mode-container1 {
-      flex-direction: row-reverse;
-      display: flex;
-      text-align: start;
-      justify-content: start;
-      align-items: start;
-      margin-top: 40px;
-      gap: 13px;
-    }
-
-    /* Responsivo Home */
-
-    header .menu-mobile {
-      display: block;
-    }
-
-    .desktop-text {
-      display: none;
-    }
-
-    .mobile-text {
-      display: block;
-      max-width: 300px;
-      font-size: 25px;
-      margin-top: 20px;
-      color: #212121;
-    }
-
-    /* Responsivo Contato*/ 
-
-    .paragraphcontato {
-      display: none;
-    }
-
-    .mobile-text-contato {
-      display: block;
-      text-align: center;
-      width: 500px;
-    } 
+  .txt-dark {
+    font-weight: 50;
+    font-family: 'neuemachinalight';
+    margin-top: 3px;
   }
+
+  .dark-mode-container {
+    flex-direction: row;
+    display: flex;
+    text-align: start;
+    justify-content: start;
+    align-items: start;
+    gap: 13px;
+  }
+
+  .dark-mode-container {
+    display: none;
+  }
+
+  .menu-mobile .dark-mode-container {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    margin-top: 40px;
+  }
+
+  header .nav {
+    display: none;
+  }
+
+  header .menu-mobile {
+    display: block;
+  }
+
+  /* Responsivo nav */
+  header .nav, header .dark-mode-containe{
+    display: none;
+  }
+
+  .btn-menu-mob {
+    display: block;  
+  }
+  
+
+  /* Responsivo Home */
+  .first-name {
+    font-size: 7em;
+  }
+
+  .last-name {
+    font-size: 7em;
+    text-indent: -20px;
+  }
+
+  .desktop-text {
+    max-width: 700px;
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  /* Responsivo Sobre*/
+  .maintext {
+    font-size: 9em;
+    max-width: 700px;
+    margin-bottom: 10px;
+  }
+  
+  .section2 p {
+    max-width: 710px;
+    font-size: 4em;
+    width: 100%;
+    gap: 25px;
+    font-family: "neuemachinalight";
+  }
+
+  .section2 {
+    justify-content: center;
+  }
+  
+  .section2 .interface {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+  }
+  
+  .txt-sobre {
+    text-align: start;
+    font-family: "neuemachina";
+    margin-left: 79px;
+    flex-wrap: wrap;
+  }
+
+  /* Responsivo Preços */
+  
+  .section3 .txt-itens-precos p {
+    max-width: 600px;
+    font-size: 1.8rem;
+    transition: 0.3s;
+  }
+
+  section.section3 {
+    height: 215vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column; /* Alinha card e info em coluna */
+    align-items: center; /* Centraliza horizontalmente */
+    gap: 20px; /* Espaçamento entre o card e a info */
+    width: 300px; /* Define a largura padrão para o card e a info */
+  }
+
+  .section3 .card-itens {
+    display: flex;
+    gap: 240px;
+    margin-right: 50px;
+    flex-direction: column;
+    margin-left: 50px;
+  }
+
+  /* Responsivo Contato */
+
+  .section4 .itens-container .txt-itens h2 {
+    font-size: 3em;
+    max-width: 612px;
+  }
+
+  .itens-container .txt-itens p {
+    font-size: 1.5em;
+    max-width: 665px;
+  }
+}
+
+@media screen and (max-width: 878px) {
+
+  header .menu-mobile {
+    display: block;
+  }
+
+  .btn-menu-mob {
+    display: block;  
+  }
+  
+  .btn {
+    display: none;
+  }
+
+  .svg {
+    width: 22px;
+    height: 62px;
+    transform: rotate(180deg);
+  }
+
+  body.dark-mode .buttonscroll {
+    width: 30px;
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+    background: #c2c3c579;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(180deg);
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 500px;
+    pointer-events: none;
+  }
+
+  .buttonscroll {
+    width: 30px;
+    height: 60px;
+    border: none;
+    border-radius: 50px;
+    background: #c2c3c5;
+    transition: all 0.3s ease-in-out;
+    transform: rotate(180deg);
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 500px;
+    pointer-events: none;
+  }
+
+  .floating-container {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  .section-home {
+    height: 60vh;
+    padding: 0;
+    min-height: unset;
+    flex-direction: column;
+  }
+
+  /* Responsive Home */
+  .first-name {
+    font-size: 5em;
+  }
+
+  .last-name {
+    font-size: 5em;
+    text-indent: -20px;
+  }
+
+  .desktop-text {
+    max-width: 500px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
+
+  .header {
+    padding: 30px 40px;
+    transition: 0.3s;
+  }
+
+  /* Responsivo Sobre */
+
+  .desktop-textsobre {
+    display: none;
+  }
+
+  .mobile-textsobre {
+    display: block;
+  }
+
+  .section2 {
+    height: 52vh;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    transition: 3s;
+    margin: 0;
+    padding: 0;
+    min-height: unset;
+  }
+  
+  .section2 .interface {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .maintext {
+    font-size: 6em;
+    max-width: 350px;
+    margin-bottom: 10px;
+    margin: 0;
+  }
+  
+  .section2 p {
+    max-width: 390px;
+    font-size: 3em;
+    width: 100%;
+    font-family: "neuemachinalight";
+    margin-top: 10px;
+  }
+
+  .section2 {
+    justify-content: center;
+  }
+  
+  .section2 .interface {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    height: 100%;
+    flex-direction: column;
+  }
+  
+  .txt-sobre {
+    text-align: start;
+    font-family: "neuemachina";
+    margin: 0;
+    flex-wrap: wrap;
+  }
+
+  .b2 {
+    margin: 0;
+    margin-top: 15px;
+  }
+
+  /* responsivo Preços */
+
+  .section3 .txt-itens-precos h2 {
+    font-size: 3em;
+  }
+
+  .section3 .txt-itens-precos p {
+    max-width: 380px;
+    font-size: 1.4rem;
+  }
+
+  .interface-precos {
+    max-height: 1986px;
+  }
+
+  /* Responsivo Contato */
+
+  .section4 .itens-container .txt-itens h2 {
+    font-size: 2em;
+    max-width: 612px;
+    transition: 0.3s;
+    text-align: center;
+  }
+
+  .itens-container .txt-itens p {
+    font-size: 1.3em;
+    max-width: 450px;
+    transition: 0.3s;
+    margin-top: 10px
+  }
+
+  section.section4 {
+    height: 96vh;
+    padding: 0;
+    min-height: unset;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .dark-mode-container {
+    display: none;
+  }
+
+  .menu-mobile .dark-mode-container {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+
+  /* Responsivo Home */
+
+  header .menu-mobile {
+    display: block;
+  }
+
+  .desktop-text {
+    display: none;
+  }
+
+  .mobile-text {
+    display: block;
+    max-width: 300px;
+    font-size: 25px;
+    margin-top: 20px;
+    color: #212121;
+  }
+
+  /* Responsivo Contato*/ 
+
+  .paragraphcontato {
+    display: none;
+  }
+
+  .mobile-text-contato {
+    display: block;
+    text-align: center;
+    width: 500px;
+  } 
 }
